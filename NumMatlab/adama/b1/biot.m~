@@ -1,0 +1,4 @@
+% Bi = h Lc / k
+% h : convective heat transfer coeff. (W/m^2 K)
+% Lc: charac length =  vol of sphere / surf. area of sphere
+% k : thermal conductivity [

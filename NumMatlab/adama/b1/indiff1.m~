@@ -1,0 +1,6 @@
+% y = 4x^5 + 20x^4
+% y', y'', y''' ?
+
+clear all; close all; clc
+syms x
+y = 4*x^5 + 20 * x^4

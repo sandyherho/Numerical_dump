@@ -1,5 +1,0 @@
-clear all; close all; clc
-syms x
-y = exp(sin(2*x));
-pretty(y)
-

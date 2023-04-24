@@ -23,4 +23,12 @@ subplot(2,2,4)
 fplot('2*x*exp(-x)-0.4', [3 4]);
 title('[3 4]')
 
-%% 
+%% fzero
+fzero('2*x*exp(-x)-0.4', [0 1])
+% fzero('2*x*exp(-x)-0.4', [1 2]) % no solution
+fzero('2*x*exp(-x)-0.4', [2 3])
+% fzero('2*x*exp(-x)-0.4', [3 4]) % no solution
+
+figure
+fplot('2*x*exp(-x)-0.4', [0 10]);
+title('[0 10]')

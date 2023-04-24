@@ -1,0 +1,12 @@
+% Intermediate value theorem
+% If f(x) is continuous function between [a,b]
+% , and if f(a) * f(b) < 0, 
+% then there exists at least one root between a and b
+
+clear all; close all; clc
+
+subplot(2,2,1)
+fplot('2*x*exp(-x)-0.4', [0 1]);
+
+
+subplot(2,2,2)

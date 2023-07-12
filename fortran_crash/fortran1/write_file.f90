@@ -5,7 +5,7 @@ program user_input
 	integer :: age
 	character(len=20) :: name
 	integer :: status
-
+	integer::unit
 
 	name ="UNKNOWN"
 	age = 0
@@ -18,7 +18,12 @@ program user_input
 		print *, "Sorry, I didn't understand that."
 	end do
 
-	print *, "Hi, " // trim(name) // "!"
-	print *, "You look great for ", age
-	print *, "What's the weather like in " // trim(hometown) // "?"
+	open(newunit=unit, file="hello.txt", status="REPLACE")
+
+
+	write(unit,*) "Hi, " // trim(name) // "!"
+	write(unit,*) "You look great for ", age
+	write(unit,*) "What's the weather like in " // trim(hometown) // "?"
+
+	close(unit)
 end program user_input
